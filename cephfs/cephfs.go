@@ -1,3 +1,4 @@
+// Wrappers around libcephfs API.
 package cephfs
 
 /*
@@ -10,10 +11,11 @@ import "C"
 
 import (
 	"fmt"
-	log "github.com/sirupsen/logrus"
 	"math"
 	"syscall"
 	"unsafe"
+
+	log "github.com/sirupsen/logrus"
 )
 
 type cephError int
